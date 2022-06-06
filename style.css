@@ -1,0 +1,49 @@
+#clock {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+#clock img {
+    width: 500px;
+}
+
+#second-hand,
+#minute-hand,
+#hour-hand
+{
+    height: 200px;
+    position: absolute;
+    bottom: 50%;
+    left: 49%;
+    border: 5px solid #000;
+    border-radius: 50%;
+    /* animation: rotate 60s linear infinite; */
+}
+
+#minute-hand {
+    height: 170px;
+    border-color: red;
+    animation-duration: 3600s;
+}
+
+#hour-hand {
+    height: 130px;
+    border-color: green;
+    animation-duration: 86400s;
+}
+
+body {
+    text-align: center;
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: bottom;
+    }
+} */
